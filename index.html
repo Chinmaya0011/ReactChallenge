@@ -6,72 +6,150 @@
   <title>JavaScript Problems for React Projects</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
       margin: 0;
       padding: 0;
+      color: #333;
     }
-
+  
     .container {
       max-width: 900px;
       margin: 30px auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      padding: 30px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: all 0.3s ease;
     }
-
+  
+  
+  
     h1 {
       text-align: center;
-      color: #333;
+      color: #444;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 600;
     }
-
+  
     .day {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      transition: all 0.3s ease;
     }
-
+  
+  
     .day h2 {
       background-color: #007BFF;
       color: white;
-      padding: 10px;
-      border-radius: 4px;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 1.8rem;
       margin: 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-
+  
+ 
+  
     ul {
       list-style-type: none;
       padding: 0;
     }
-
+  
     ul li {
       background-color: #f9f9f9;
-      padding: 8px;
-      margin: 8px 0;
-      border-radius: 4px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 12px 20px;
+      margin: 12px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
     }
-
-    ul li:hover {
-      background-color: #e9ecef;
-    }
-
+  
+   
+  
     .problem-number {
-      font-weight: bold;
+      font-weight: 600;
+      color: #007BFF;
+      font-size: 1.1rem;
     }
-
+  
     .description {
-      font-size: 14px;
-      color: #666;
-      margin-top: 4px;
+      font-size: 15px;
+      color: #555;
+      margin-top: 6px;
+      line-height: 1.6;
     }
-
+  
+    .description em {
+      color: #007BFF;
+    }
+  
     footer {
       text-align: center;
-      margin-top: 50px;
+      margin-top: 60px;
       font-size: 14px;
-      color: #666;
+      color: #777;
+      padding-top: 20px;
     }
+  
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  
+    footer a:hover {
+      text-decoration: underline;
+    }
+  
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+  
+      h1 {
+        font-size: 2rem;
+      }
+  
+      .day h2 {
+        font-size: 1.5rem;
+      }
+  
+      ul li {
+        padding: 10px;
+      }
+  
+      .problem-number {
+        font-size: 1rem;
+      }
+  
+      .description {
+        font-size: 13px;
+      }
+    }
+  
+    /* Floating action button (for additional interactivity) */
+    .fab {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  
+    
   </style>
+  
 </head>
 <body>
 
@@ -207,7 +285,211 @@
         </li>
       </ul>
     </div>
-
+    <div class="day">
+      <h2>Day 6: React Essentials</h2>
+      <ul>
+        <li>
+          <span class="problem-number">26.</span> Conditional Rendering
+          <div class="description">
+            Write a React component that conditionally renders a message based on a prop.  
+            <em>Example:</em> If isLoggedIn is true, render "Welcome", otherwise render "Please log in."
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">27.</span> Handling State in React
+          <div class="description">
+            Write a React component that uses the useState hook to toggle visibility.  
+            <em>Example:</em> Toggle a modal or a dropdown menu.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">28.</span> Passing Props to a Child Component
+          <div class="description">
+            Write a parent and child component where the parent passes a value to the child.  
+            <em>Example:</em> The parent passes a name to the child to display it.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">29.</span> Event Handling in React
+          <div class="description">
+            Write a React component that handles a button click event.  
+            <em>Example:</em> Display an alert message when a button is clicked.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">30.</span> Form Handling in React
+          <div class="description">
+            Write a React component that handles form submission and displays the entered data.  
+            <em>Example:</em> Use useState to capture user input and display it upon form submission.
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="day">
+      <h2>Day 7: React Component Lifecycle</h2>
+      <ul>
+        <li>
+          <span class="problem-number">31.</span> Use useEffect for Data Fetching
+          <div class="description">
+            Write a component that fetches data in useEffect and displays it.  
+            <em>Example:</em> Fetch user data when the component mounts and display it.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">32.</span> Cleanup in useEffect
+          <div class="description">
+            Write a React component that cleans up after itself when it unmounts.  
+            <em>Example:</em> Use useEffect to remove an event listener when the component is removed.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">33.</span> ComponentDidMount Equivalent in React
+          <div class="description">
+            Write a component using useEffect to mimic componentDidMount behavior.  
+            <em>Example:</em> Fetch data when the component mounts.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">34.</span> Use useEffect to Watch Props Changes
+          <div class="description">
+            Write a React component that updates state based on prop changes.  
+            <em>Example:</em> Update a counter when a prop count changes.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">35.</span> Use useRef to Access DOM Elements
+          <div class="description">
+            Write a React component that uses useRef to focus an input field on mount.  
+            <em>Example:</em> Focus on an input element when the component renders.
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="day">
+      <h2>Day 8: Advanced JavaScript and React</h2>
+      <ul>
+        <li>
+          <span class="problem-number">36.</span> Custom Hook for Local Storage
+          <div class="description">
+            Write a custom React hook to manage state in local storage.  
+            <em>Example:</em> Use local storage to persist a theme preference.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">37.</span> Render Props Pattern
+          <div class="description">
+            Write a component using the render props pattern to pass data to children.  
+            <em>Example:</em> A component that provides a state to its children through a render function.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">38.</span> React Context API for State Management
+          <div class="description">
+            Write a basic implementation of Context API to manage global state.  
+            <em>Example:</em> Provide a theme value through Context and consume it in child components.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">39.</span> Dynamic Component Rendering
+          <div class="description">
+            Write a React component that dynamically renders different components based on props.  
+            <em>Example:</em> Render a Card or Button component based on the type prop.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">40.</span> Memoization in React
+          <div class="description">
+            Write a component using React.memo to avoid unnecessary re-renders.  
+            <em>Example:</em> Use React.memo for a list component that doesn't need re-rendering unless the props change.
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="day">
+      <h2>Day 9: Advanced JavaScript Concepts</h2>
+      <ul>
+        <li>
+          <span class="problem-number">41.</span> Currying
+          <div class="description">
+            Write a function that uses currying to add multiple numbers.  
+            <em>Example:</em> add(1)(2)(3) should return 6.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">42.</span> Closure Example
+          <div class="description">
+            Write a function demonstrating closures with a private counter.  
+            <em>Example:</em> counter() should return a function that increments a count.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">43.</span> Bind Context in JavaScript
+          <div class="description">
+            Write a function that binds context using bind().  
+            <em>Example:</em> Use bind() to bind a method to a specific object.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">44.</span> Destructuring Assignment
+          <div class="description">
+            Write a function that destructures an object and array and returns a new object.  
+            <em>Example:</em> Destructure { name: "John", age: 30 } into variables.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">45.</span> IIFE (Immediately Invoked Function Expression)
+          <div class="description">
+            Write an IIFE that logs a message to the console.  
+            <em>Example:</em> (function() { console.log("Hello") })() should log "Hello".
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="day">
+      <h2>Day 10: Error Handling and Optimization</h2>
+      <ul>
+        <li>
+          <span class="problem-number">46.</span> Handle Multiple Errors Gracefully
+          <div class="description">
+            Write a function that handles multiple types of errors and provides feedback to the user.  
+            <em>Example:</em> Use try-catch blocks to handle different errors and display user-friendly messages.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">47.</span> Memoization Function for Performance
+          <div class="description">
+            Write a memoized version of a function that calculates Fibonacci numbers.  
+            <em>Example:</em> fib(5) should return 5 and cache the result.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">48.</span> Prevent Memory Leaks in React
+          <div class="description">
+            Write a React component that prevents memory leaks when making asynchronous calls.  
+            <em>Example:</em> Use cleanup functions inside useEffect to cancel ongoing API requests when the component unmounts.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">49.</span> Lazy Loading in React
+          <div class="description">
+            Write a React component that loads a component lazily using React.lazy.  
+            <em>Example:</em> Dynamically load a component only when needed.
+          </div>
+        </li>
+        <li>
+          <span class="problem-number">50.</span> Code Splitting with React
+          <div class="description">
+            Write a React app that implements code splitting using React.Suspense.  
+            <em>Example:</em> Use React.Suspense to load components asynchronously.
+          </div>
+        </li>
+      </ul>
+    </div>
+    
     <footer>
       <p>&copy; 2024 JavaScript Exercises</p>
     </footer>
