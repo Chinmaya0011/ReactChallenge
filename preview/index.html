@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Problems for React Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .day {
+      margin-bottom: 30px;
+    }
+
+    .day h2 {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      background-color: #f9f9f9;
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    ul li:hover {
+      background-color: #e9ecef;
+    }
+
+    .problem-number {
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>JavaScript Problems for React Projects</h1>
+
+    <div class="day">
+      <h2>Day 1: Basics and Data Types</h2>
+      <ul>
+        <li>
+          <span class="problem-number">1.</span> Sum of an Array
+          <div class="description">Write a function that takes an array of numbers and returns their sum. This is a basic exercise to work with arrays and loops.</div>
+        </li>
+        <li>
+          <span class="problem-number">2.</span> Reverse a String
+          <div class="description">Write a function that reverses a given string. This helps practice string manipulation and loops.</div>
+        </li>
+        <li>
+          <span class="problem-number">3.</span> Find Maximum Element in Array
+          <div class="description">Write a function that finds the maximum element in an array. It helps in understanding how to traverse arrays and compare elements.</div>
+        </li>
+        <li>
+          <span class="problem-number">4.</span> Check if a String is a Palindrome
+          <div class="description">Write a function to check if a string is the same when reversed. It will help understand string manipulation and comparison techniques.</div>
+        </li>
+        <li>
+          <span class="problem-number">5.</span> Array Flattening
+          <div class="description">Write a function that flattens a nested array to a single level. This is useful in data processing when dealing with nested structures.</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2>Day 2: Object and Array Manipulation</h2>
+      <ul>
+        <li>
+          <span class="problem-number">6.</span> Deep Clone an Object
+          <div class="description">Write a function to create a deep clone of an object. This helps with understanding the concept of shallow vs deep copies.</div>
+        </li>
+        <li>
+          <span class="problem-number">7.</span> Merge Two Arrays
+          <div class="description">Write a function that merges two arrays without duplicates. This teaches array manipulation and working with unique data.</div>
+        </li>
+        <li>
+          <span class="problem-number">8.</span> Filter Odd Numbers
+          <div class="description">Write a function that filters out odd numbers from an array. This introduces the use of filter methods on arrays.</div>
+        </li>
+        <li>
+          <span class="problem-number">9.</span> Sort an Array of Objects
+          <div class="description">Write a function that sorts an array of objects by a property. This is a common operation in React apps when displaying lists of data.</div>
+        </li>
+        <li>
+          <span class="problem-number">10.</span> Map an Array to Another Format
+          <div class="description">Write a function that converts an array of strings to an array of objects. It helps practice the `map()` function.</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2>Day 3: Functions and Loops</h2>
+      <ul>
+        <li>
+          <span class="problem-number">11.</span> Debounce a Function
+          <div class="description">Write a debounce function to limit the number of times a function is called in quick succession. This is a key concept for performance optimization in React apps.</div>
+        </li>
+        <li>
+          <span class="problem-number">12.</span> Throttle a Function
+          <div class="description">Write a throttle function to limit the number of times a function can be called over a period. It's useful for handling high-frequency events like scrolling.</div>
+        </li>
+        <li>
+          <span class="problem-number">13.</span> Count Occurrences of a Character
+          <div class="description">Write a function to count how many times a character appears in a string. This teaches the use of string functions and loops.</div>
+        </li>
+        <li>
+          <span class="problem-number">14.</span> Factorial of a Number
+          <div class="description">Write a recursive function to find the factorial of a number. This helps practice recursion and understanding its benefits.</div>
+        </li>
+        <li>
+          <span class="problem-number">15.</span> Fibonacci Sequence
+          <div class="description">Write a function to generate the first N Fibonacci numbers. This introduces working with sequences and recursion.</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2>Day 4: DOM and Event Handling</h2>
+      <ul>
+        <li>
+          <span class="problem-number">16.</span> Add Event Listener to Multiple Elements
+          <div class="description">Write a function that adds a click event listener to multiple DOM elements. This helps in batch handling of DOM events.</div>
+        </li>
+        <li>
+          <span class="problem-number">17.</span> Get Element Position in Viewport
+          <div class="description">Write a function that returns the position of an element relative to the viewport. This can be useful in scroll-related tasks.</div>
+        </li>
+        <li>
+          <span class="problem-number">18.</span> Create a Dynamic HTML Table
+          <div class="description">Write a function that creates a table dynamically based on input data. This is important for building interactive, data-driven React apps.</div>
+        </li>
+        <li>
+          <span class="problem-number">19.</span> Toggle a Class on Click
+          <div class="description">Write a function that toggles a class on an element when clicked. This is useful for interactive UI elements like buttons or modals.</div>
+        </li>
+        <li>
+          <span class="problem-number">20.</span> Prevent Default Form Submission
+          <div class="description">Write a function to prevent form submission and log the form data to the console. It's a common pattern for handling forms in React.</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2>Day 5: Asynchronous JavaScript</h2>
+      <ul>
+        <li>
+          <span class="problem-number">21.</span> Promise Chain
+          <div class="description">Write a function that chains multiple promises and logs the result. This is a key concept for handling asynchronous code in React.</div>
+        </li>
+        <li>
+          <span class="problem-number">22.</span> Fetch Data from an API
+          <div class="description">Write a function that fetches data from an API and logs the result. It teaches working with APIs, which is crucial for React apps.</div>
+        </li>
+        <li>
+          <span class="problem-number">23.</span> Handle Errors in Asynchronous Code
+          <div class="description">Write a function that fetches data and handles errors if the fetch fails. This is essential for writing robust React components.</div>
+        </li>
+        <li>
+          <span class="problem-number">24.</span> Async/Await with Fetch
+          <div class="description">Rewrite the fetch function using async/await syntax. This helps improve readability and error handling in asynchronous code.</div>
+        </li>
+        <li>
+          <span class="problem-number">25.</span> Delay Execution Using setTimeout
+          <div class="description">Write a function that delays the execution of a task using setTimeout. This introduces working with time delays in JavaScript.</div>
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 JavaScript Exercises</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
