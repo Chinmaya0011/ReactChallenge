@@ -43,3 +43,14 @@
 // chin.forEach(function(e){
 //     console.log(e.textContent)
 // })
+
+const data=document.getElementById("name1");
+ 
+let inputData;
+const printData=(event)=>{
+   inputData=event.target.value;
+}  
+
+const submit=()=>{
+  data.innerText=inputData;
+}

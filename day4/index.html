@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .active {
+    background-color: blue;
+    color: rgb(251, 251, 251);
+}
+
+    </style>
 </head>
 <body>
-<!-- 
-    <div id="container">
-        <p id="bulb"></p>
-        <button id="switch">off</button>
-    </div> -->
-<h1>Chinmaya</h1>
-<h1>Hello</h1>
-<h1>Hyyy</h1>
-<h1>Bala</h1>
-<h1>Chi</h1>
+    <button onclick="toggle()">Toggle</button>
+    <button class="chinu">Button1</button>
+    <button class="chinu">Button2</button>
+    <button class="chinu">Button3</button>
+    <button class="chinu">Button4</button>
+    <button class="chinu">Button5</button>
+
+    <script>
+        function toggle() {
+            // Select all elements with the class "chinu"
+            const buttons = document.querySelectorAll('.chinu');
+
+            // Toggle a class (e.g., "active") for each button when the function is called
+            buttons.forEach(button => {
+                button.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
-<script src="script.js"></script>
 </html>
